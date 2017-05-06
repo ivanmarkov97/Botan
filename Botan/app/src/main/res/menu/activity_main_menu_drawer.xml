@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Мой профиль"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:id="@+id/id_profile" />
+        <item
+            android:id="@+id/current_orders"
+            android:icon="@android:drawable/sym_action_chat"
+            android:title="Текущие заказы" />
+        <item
+            android:id="@+id/done_orders"
+            android:icon="@android:drawable/star_big_off"
+            android:title="Выполненные заказы" />
+        <item
+            android:id="@+id/messengers"
+            android:icon="@android:drawable/sym_action_email"
+            android:title="Сообщения" />
+    </group>
+
+    <item android:title="Особое">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Настройки" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Выход" />
+        </menu>
+    </item>
+
+</menu>

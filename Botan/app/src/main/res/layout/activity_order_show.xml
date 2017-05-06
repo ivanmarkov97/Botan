@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#212121"
+    tools:context="com.example.ivan.botan.OrderShowActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewOrderShowSubject"
+        android:textColor="#DDDDDD"
+        android:fontFamily="casual"
+        android:textSize="24sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textViewOrderShowDescTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="200dp"
+        android:background="#303030"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textViewOrderShowDesciption"
+            android:layout_below="@+id/textViewOrderShowDescTitle"
+            android:layout_centerHorizontal="true"
+            android:textColor="#DDDDDD"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Вернуться к выбору!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonReturnToSelect"
+        android:background="@drawable/button_primary"
+        android:layout_marginBottom="5dp"
+        android:textColor="#DDDDDD"
+        android:fontFamily="casual"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageViewOrderShowPhoto"
+        android:src="@drawable/ava_order"
+        android:layout_below="@+id/textViewOrderShowSubject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Сергей"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOrderShowName"
+        android:textColor="#DDDDDD"
+        android:fontFamily="casual"
+        android:layout_above="@+id/textViewOrderShowDescTitle"
+        android:layout_toRightOf="@+id/imageViewOrderShowPhoto"
+        android:layout_toEndOf="@+id/imageViewOrderShowPhoto"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:text="Описание:"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOrderShowDescTitle"
+        android:textColor="#DDDDDD"
+        android:fontFamily="casual"
+        android:layout_below="@+id/imageViewOrderShowPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="цена:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOrderCost"
+        android:textColor="#DDDDDD"
+        android:fontFamily="casual"
+        android:layout_alignBaseline="@+id/textViewOrderShowName"
+        android:layout_alignBottom="@+id/textViewOrderShowName"
+        android:layout_toRightOf="@+id/textViewOrderShowSubject"
+        android:layout_toEndOf="@+id/textViewOrderShowSubject"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <Button
+        android:text="Взять"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTakeOrder"
+        android:background="@drawable/button_primary"
+        android:textColor="#DDDDDD"
+        android:fontFamily="casual"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/buttonReturnToSelect"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/scrollView2"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/scrollView2"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <TextView
+        android:text="10.03.2017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="#DDDDDD"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
